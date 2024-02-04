@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Esame</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/default.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><img src="./src/svgs/logo_kitkat.svg" alt="logo_kitkat"></a>
+            <a href="#form" class="btn">Acquista ora</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-texts">
+                <h1 class="title">Da oggi il Break è anche Online!</h1>
+                <p class="sub-title">Scopri tutti i prodotti disponibili nel nostro store</p>
+                <a href="#form" class="btn">Acquista ora</a>
+            </div>
+            <div class="hero-imgs">
+                <div class="imgs-box">
+                    <p class="hero-img-1"><img src="./src/imgs/kitkat_white.png" alt="kitkat_white"></p>
+                    <p class="hero-img-2"><img src="./src/imgs/kitkat.png" alt="kitkat_white"></p>
+                    <p class="hero-img-3"><img src="./src/imgs/kitkat_dark.png" alt="kitkat_white"></p>
+                </div>
+            </div>
+            <div class="img-responsive"><img src="./src/imgs/bg-hero.png" alt=""></div>
+        </section>
+        <section class="section-1">
+            <h2>KitKat Originale</h2>
+            <p class="desc">Più latte, più cacao, stesso gusto unico e inconfondibile. Lo snack ideale per un Break
+                goloso e croccante.</p>
+            <div class="imgs"><img src="./src/imgs/kitkat_set.png" alt=""></div>
+            <a href="#" class="btn">Acquista ora</a>
+        </section>
+        <section class="section-2">
+            <h2>Informazioni nutrizionali</h2>
+
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Valori</th>
+                        <th>Per 100g</th>
+                        <th>Per porzione (41,5g)</th>
+                        <th>% per porzione</th>
+                    </tr>
+                    <tr>
+                        <td>Energia</td>
+                        <td>2150 kJ</td>
+                        <td>892 kJ</td>
+                        <td>11%</td>
+                    </tr>
+                    <tr>
+                        <td>Grassi</td>
+                        <td>2150 kJ</td>
+                        <td>892 kJ</td>
+                        <td>11%</td>
+                    </tr>
+                    <tr>
+                        <td>Carboidrati</td>
+                        <td>2150 kJ</td>
+                        <td>892 kJ</td>
+                        <td>11%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteine</td>
+                        <td>2150 kJ</td>
+                        <td>892 kJ</td>
+                        <td>11%</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="section-3">
+            <h2>Acquista il tuo KitKat preferito</h2>
+            <form id="form" method="get" action="./order-page.html" >
+                <div class="input-label">
+                    <label for="name">Name *</label>
+                    <input required type="text" name="name" id="name">
+                </div>
+                <div class="input-label">
+                    <label for="name">Email *</label>
+                    <input required type="email" name="email" id="email">
+                </div>
+                <div class="input-label">
+                    <label for="kitkat">Segli il tuo Kitkat *</label>
+                    <select name="kitkat" id="kitkat">
+                        <option value="0"></option>
+                        <option value="white">Kitkat White</option>
+                        <option value="normal">Kitkat</option>
+                        <option value="dark">Kitkat Dark</option>
+                    </select>
+                </div>
+                <div class="input-label">
+                    <label for="quantity">Quante confezioni vuoi? *</label>
+                    <div class="choice">
+                        <div>
+                            <input required type="radio" name="quantity" id="quantity">
+                        <p>1 Confezione</p>
+                        </div>
+                      <div>
+                        <input type="radio" name="quantity" id="quantity">
+                        <p>5 Confezione</p>
+                      </div>
+                       <div>
+                        <input type="radio" name="quantity" id="quantity">
+                        <p>10 Confezione</p>
+                       </div>
+                    </div>
+                </div>
+                <div class="input-label">
+                    <label for="textarea">Informazioni aggiuntive</label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                </div>
+                <div class="check">
+                    <input required type="checkbox" name="consent" id="consent">
+                    <p>Ho letto e accetto i termini della privacy e policy</p>
+                </div>
+
+                <input type="submit" class="btn" value="Invia ordine" />
+            </form>
+        </section>
+        <footer>
+            <a href="#" class="logo"><img src="./src/svgs/logo_kitkat.svg" alt="logo_kitkat"></a>
+            <p>Copyright 2019 - KitKat srl</p>
+        </footer>
+    </main>
+</body>
+
+</html>
